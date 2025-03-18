@@ -2,6 +2,7 @@ import styles from "./todoitem.module.css";
 export default function TodoItem({ item, todos, setTodos }) {
   function handleDelete(item) {
     setTodos(todos.filter((todo) => todo !== item));
+    //console.log("delete button clicked for", item);
   }
   function handleClick() {
     console.log("item text clicked");
